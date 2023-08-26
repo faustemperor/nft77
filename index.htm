@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pp{
+            width: 10%;
+        }
+        .uu{
+            width: 60px;
+            height: 60px;
+            background: yellow;
+        }
+        body{
+            background: #0A0902;
+        }
+        .ll{
+            display: flex;
+        }
+        .text{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            gap:56px;
+        }
+        .ab1{
+            color: rgba(255, 255, 255, 0.70);
+        }
+        .ab2{
+            color: rgb(242, 247,69);
+        }
+        .but{
+            width: 10%;
+        }
+        .log{
+            background: linear-gradient(180deg, #F8F744 0%, #E8F844 100%);
+            width: 135px;
+            height: 50px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+        }
+        .fy{
+            color: var(--white, #FFF);
+        }
+        .tt{
+            justify-content: center;
+            display: flex;
+            height:200px;
+            align-items: center;
+            width: 100vw;
+            margin-top: 50px;
+        }
+        .dnb{
+            color: rgba(255, 255, 255, 0.60);
+            text-align: center;
+            font-size: 20px;
+        }
+        .le{
+            background: linear-gradient(180deg, #F8F744 0%, #E8F844 100%);
+            width: 180px;
+            height: 55px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+            margin-top: 30px;
+        }
+        .knin{
+            justify-content: space-around;
+            display: flex;
+            position: relative;
+        }
+        .vec1{
+            position: absolute;
+            right: 300px;
+        }
+        .vec2{
+            position: absolute;
+            left: 270px;
+        }
+        .vr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 400px;
+            margin-top: 130px;
+        }
+        .kart{
+            position: absolute;
+            left: 360px;
+        }
+        .kart1{
+            position: absolute;
+        }
+        .kart2{
+            position: absolute;
+            top: 390px;
+            border-radius:120px;
+            border: 9px solid white;
+            left: 100px;
+        }
+        .kartt{
+            position: absolute;
+            top: 155px;
+        }
+        .dich{
+            color: yellow;
+            margin-top: 180px;
+            font-size: 60px;
+            opacity: 0.7;
+        }
+        .tc{
+            justify-content: center;
+            display: flex;
+            height:200px;
+            align-items: center;
+            width: 100vw;
+            margin-top: 50px;
+        }
+        .obzg{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            position: relative;
+        }
+        .obz{
+            width: 500px;
+            height: 500px;
+            margin-left:150px;
+        }
+        .obz1{
+            width: 500px;
+            height: 500px;
+        }
+        .obz2{
+            width: 500px;
+            height: 500px;
+        }
+        .e840{
+            position: absolute;
+            top:110px;
+            left: 890px;
+        }
+        .e841{
+            position: absolute;
+            top:110px;
+            right: 370px;
+        }
+        .e804{
+            position: absolute;
+            top:110px;
+            left:395px;
+        }
+        .knopka1{
+            background: linear-gradient(180deg, #F8F744 0%, #E8F844 100%);
+            width: 360px;
+            height: 55px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+            margin-top: 30px;
+        }
+        .knopka2{
+            color: yellow;
+            background:#0F0F0F;
+            width: 360px;
+            height: 55px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+            margin-top: 30px;
+        }
+        .knopki{
+            justify-content: center;
+            gap: 140px;
+            display: flex;
+            width: 100vw;
+        }
+        .EAW{
+            justify-content: center;
+            display: flex;
+            height:200px;
+            align-items: center;
+            width: 100vw;
+            margin-top: 50px;
+        }
+        .AAM{
+            justify-content: center;
+            gap: 10px;
+            display: flex;
+            width: 100vw;
+        }
+        .but1{
+            background: linear-gradient(180deg, #F8F744 0%, #E8F844 100%);
+            width: 260px;
+            height: 55px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+            margin-top: 30px;
+        }
+        .but2{
+            color: rgba(255, 255, 255, 0.60);
+            background: #0F0F0F;
+            width: 260px;
+            height: 55px;
+            border-radius: 20px;
+            outline: 2px solid #0F0F0F;;
+            margin-top: 30px;
+        }
+        .yanegar{
+            display: flex;
+        }
+        .kart4ki{
+            display: flex;
+            margin-top: 70px;
+            justify-content: center;
+            gap: 60px;
+        }
+        .JW{
+            color:rgba(255, 255, 255, 0.72);
+        }
+        .yanegar{
+            display: flex;
+            gap: 10px;
+        }
+        .negri{
+            background: #0F0F0F;
+        }
+        .ed{
+            width: 368px;
+            height: 340px;
+            margin-top: 10px;
+        }
+        .APS{
+            color:rgba(255, 255, 255, 0.72);
+        }
+        .HB{
+            color: rgba(255, 255, 255, 0.40);
+        }
+        .ETH6{
+            color: #FFF;
+        }
+        .negro{
+            display: flex;
+            position: relative;
+        }
+        .xzx{
+            margin-left: 150px;
+        }
+        .pa{
+            position: absolute;
+            left: 235px;
+            bottom: 23px;
+        }
+        .cr{
+            color: #F8F744;
+            font-size: 30px;
+        }
+        .neu{
+            background: linear-gradient(180deg, #F8F744 0%, #E8F844 100%);
+            width: 120px;
+            height: 45px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+            margin-top: 30px;
+        }
+        .neu2{
+            background: var(--white, #FFF);
+            color: #0A0902;;
+            width: 175px;
+            height: 45px;
+            border-radius: 20px;
+            outline: 2px solid var(--white, #FFF);
+            margin-top: 30px;
+        }
+        .sinebot{
+            display: flex;
+            justify-content: space-around;
+        }
+        .topA{
+            justify-content: center;
+            display: flex;
+            height:200px;
+            align-items: center;
+            width: 100vw;
+            margin-top: 50px;
+        }
+        .nek1{
+            background: #10100F;
+        }
+        .ELIPSE{
+            display: flex;
+            color: rgba(255, 255, 255, 0.72);
+            margin-bottom: 10px;
+        }
+        .Fol{
+            background: linear-gradient(180deg, #F8F744 0%, #E8F844 100%);
+            width: 120px;
+            height: 45px;
+            border-radius: 20px;
+            outline: 2px solid yellow;
+            margin-top: 10px;
+            margin-left: 120px;
+        }
+        .RF{
+            margin-left: 20px;
+        }
+        .nek1{
+            margin-left: 40px;
+            width: 400px;
+        }
+        .obz6{
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+            
+        }
+        .yu1{
+            margin: 5px;
+        }
+        .nek{
+            display: flex;
+            justify-content: center;
+        }
+        .AAK{
+            color: #FFF;
+            font-size: 27px;
+        }
+        .gchurka{
+            display: flex;
+            justify-content: center;
+            gap:40px;
+        }
+        .churka{
+            display: flex;
+            background:#10100F;
+            margin: 17px;
+        }
+        .pr40{
+            color: #F8F744;
+        }
+        .PRIEC{
+            color:rgba(255, 255, 255, 0.25)
+        }
+        .gr67{
+            color: var(--green, #60D800);
+            padding-left: 20px;
+        }
+        .elipsech{
+            width: 90px;
+            height: 90px;
+            margin-right: 20px;
+        }
+        .OBEZ{
+            width: 1240px;
+            height: 437px;
+            background: var(--09, linear-gradient(180deg, #F8F744 0%, #E8F844 100%));
+            border-radius: 16px;
+            margin-top: 110px;
+            display: flex;
+        }
+        .obez1{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        .gs{
+            display: flex;
+            flex-direction: column;
+            padding: 55px;
+        }
+        .gchurkat{
+            width: 1446px;
+            height: 262px;
+            margin:auto;
+            margin-top:90px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .chorni{
+            color: rgba(255, 255, 255, 0.50);
+        }
+        .soc{
+            display: flex;
+            gap: 20px;
+            display: flex;
+        }
+        .chta{
+            width: 32px;
+            height: 32px;
+        }
+        .hhl{
+            color: rgba(255, 255, 255, 0.50);
+        }
+        .hell{
+            
+        }
+        .hrka{
+            width: 1240px;
+            height: 0px;
+            color: rgba(255, 255, 255, 0.40);
+        }
+        .df{
+            display: flex;
+            justify-content: space-around;
+            color: rgba(255, 255, 255, 0.50);
+        }
+        .yee{
+
+        }
+        .df2{
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ll">
+    <div class="pp">
+        
+    </div>
+    <div class="text">
+    <p class="ab2">
+        HOME
+    </p>
+    <p class="ab1">
+        ABOUT
+    </p>
+    <p class="ab1">
+        ARTWOAK
+    </p>
+    <p class="ab1">
+        COLLECTION
+    </p>
+    <p class="ab1">
+        ARTIST
+    </p>
+    </div>
+    <div class="but">
+        <button class="log">Login</button>
+    </div>
+    </div>
+    <div class="tt">
+    <img src="New Rare Digtal NFT Collection For You.png" alt="">
+</div>
+<p class="dnb">Discover NFTs by category, track the latest drops and<br> follow the collections you love. Enjoy it</p>
+    <div class="knin">
+    <div>
+        <img src="Ellipse 838 (1).png" alt="">
+    </div>
+    <div class="knop">
+    <button class="le">Lets Explore</button>
+    </div>
+    <img src="Ellipse 839 (1).png" alt="">
+    </div>
+    </div>
+    <div class="vec1">
+        <img src="Vector.png" alt="">
+    </div>
+    <div class="vec2">
+        <img src="Vector.png" alt="">
+    </div>
+    <div class="vr">
+    <img class="kart" src="Vector (1).png" alt="">
+    <div class="kartt">
+    <img class="kart2" src="image 248.png" alt="">
+    </div>
+    <img class="kart1" src="Rectangle 5006.png" alt="">
+</div>
+    <marquee class="dich" behavior="" direction="">Huoby ETHEREUM PAYEER butsquare GEMINI BINANCE Huoby PAYEER Huoby ETHEREUM PAYEER butsquare GEMINI BINANCE Huoby PAYEER</marquee>
+    <div class="tc">
+        <img src="top COLLLECTION.png" alt="">
+    </div>
+    <div class="obzg">
+        <div class="obz">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA.png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (1).png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (2).png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (3).png" alt="">
+        </div>
+        <div class="obz1">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA11.png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA22.png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA33.png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA44.png" alt="">
+        </div>
+        
+        <div class="obz2">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (8).png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (9).png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (2).png" alt="">
+            <img src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+        </div>
+        <img class="e840" src="Ellipse 840.png" alt="">
+        <img class="e841" src="Ellipse 841.png" alt="">
+        <img class="e804" src="Ellipse 804.png" alt="">
+    </div>
+    <div class="knopki">
+        <button class="knopka1">
+            view all
+        </button>
+        <button class="knopka2">
+            view all
+        </button>
+        <button class="knopka2">
+            view all
+        </button>
+    </div>
+    <div class="EAW">
+    <img  src="explore Artwork.png" alt="">
+</div>
+    <div class="AAM">
+        <button class="but1">
+            ALL ITEMS
+        </button>
+        <button class="but2">
+            ART
+        </button>
+        <button class="but2">
+            DIGITAL ART
+        </button>
+        <button class="but2">
+            MUSIC
+        </button>
+        <button class="but2">
+            VIDEO
+        </button>
+        <button class="but2">
+            DIGITAL ART
+        </button>
+    </div>
+    <div class="kart4kig">
+    <div class="kart4ki">
+        <div class="negri">
+            <div class="yanegar">
+                <img src="Ellipse 803.png" alt="">
+                <p class="JW">
+                    @Jenny wilson
+                </p>
+            </div>
+            <img class="ed" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+            <div class="negro">
+                <p class="APS">APE IS KUSAMA</p>
+                <img class="pa" src="Group 36649.png" alt="">
+                <div class="xzx">
+                    <p class="HB">Highest Bid</p>
+                    <p class="ETH6">6.32 ETH</p>
+                </div>
+            </div>
+                <div class="sinebot">
+                    <p class="cr">
+                        08 : 23 : 56
+                    </p>
+                    <button class="neu">
+                        Auction
+                    </button>
+                </div>
+        </div>
+            <div class="negri">
+                <div class="yanegar">
+                    <img src="Ellipse 803.png" alt="">
+                    <p class="JW">
+                        @Jenny wilson
+                    </p>
+                </div>
+                <img class="ed" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+                <div class="negro">
+                    <p class="APS">APE IS KUSAMA</p>
+                    <img class="pa" src="Group 36649.png" alt="">
+                    <div class="xzx">
+                        <p class="HB">Highest Bid</p>
+                        <p class="ETH6">6.32 ETH</p>
+                    </div>
+                </div>
+                    <div class="sinebot">
+                        <p class="cr">
+                            08 : 23 : 56
+                        </p>
+                        <button class="neu">
+                            Auction
+                        </button>
+                    </div>
+    </div>
+        <div class="negri">
+        <div class="yanegar">
+            <img src="Ellipse 803.png" alt="">
+            <p class="JW">
+                @Jenny wilson
+            </p>
+        </div>
+        <img class="ed" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+        <div class="negro">
+            <p class="APS">APE IS KUSAMA</p>
+            <img class="pa" src="Group 36649.png" alt="">
+            <div class="xzx">
+                <p class="HB">Highest Bid</p>
+                <p class="ETH6">6.32 ETH</p>
+            </div>
+        </div>
+            <div class="sinebot">
+                <p class="cr">
+                    08 : 23 : 56
+                </p>
+                <button class="neu">
+                    Auction
+                </button>
+            </div>
+            
+    </div>
+    </div>
+    <div><div class="kart4ki">
+        <div class="negri">
+            <div class="yanegar">
+                <img src="Ellipse 803.png" alt="">
+                <p class="JW">
+                    @Jenny wilson
+                </p>
+            </div>
+            <img class="ed" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+            <div class="negro">
+                <p class="APS">APE IS KUSAMA</p>
+                <img class="pa" src="Group 36649.png" alt="">
+                <div class="xzx">
+                    <p class="HB">Highest Bid</p>
+                    <p class="ETH6">6.32 ETH</p>
+                </div>
+            </div>
+                <div class="sinebot">
+                    <p class="cr">
+                        08 : 23 : 56
+                    </p>
+                    <button class="neu">
+                        Auction
+                    </button>
+                </div>
+        </div>
+            <div class="negri">
+                <div class="yanegar">
+                    <img src="Ellipse 803.png" alt="">
+                    <p class="JW">
+                        @Jenny wilson
+                    </p>
+                </div>
+                <img class="ed" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+                <div class="negro">
+                    <p class="APS">APE IS KUSAMA</p>
+                    <img class="pa" src="Group 36649.png" alt="">
+                    <div class="xzx">
+                        <p class="HB">Highest Bid</p>
+                        <p class="ETH6">6.32 ETH</p>
+                    </div>
+                </div>
+                    <div class="sinebot">
+                        <p class="cr">
+                            08 : 23 : 56
+                        </p>
+                        <button class="neu">
+                            Auction
+                        </button>
+                    </div>
+    </div>
+        <div class="negri">
+        <div class="yanegar">
+            <img src="Ellipse 803.png" alt="">
+            <p class="JW">
+                @Jenny wilson
+            </p>
+        </div>
+        <img class="ed" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (11).png" alt="">
+        <div class="negro">
+            <p class="APS">APE IS KUSAMA</p>
+            <img class="pa" src="Group 36649.png" alt="">
+            <div class="xzx">
+                <p class="HB">Highest Bid</p>
+                <p class="ETH6">6.32 ETH</p>
+            </div>
+        </div>
+            <div class="sinebot">
+                <p class="cr">
+                    08 : 23 : 56
+                </p>
+                <button class="neu">
+                    Auction
+                </button>
+        </div>
+        </div>
+        </div>
+        <div class="topA">
+    <img src="tOP Artist.png" alt="">
+    </div>
+    <div class="nek">
+        <div class="nek1">
+            <div class="ELIPSE">
+                <img src="Ellipse 8033.png" alt="">
+                <p class="RF">@Robert FOX</p>
+                <button class="Fol">
+                    Follow
+                </button>
+            </div>
+            <div class="obz6">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA.png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (1).png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (2).png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (3).png" alt="">
+            </div>
+        </div>
+        <div class="nek1">
+            <div class="ELIPSE">
+                <img src="Ellipse 8033.png" alt="">
+                <p class="RF">@Robert FOX</p>
+                <button class="Fol">
+                    Follow
+                </button>
+            </div>
+            <div class="obz6">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA.png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (1).png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (2).png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (3).png" alt="">
+            </div>
+        </div>
+        <div class="nek1">
+            <div class="ELIPSE">
+                <img src="Ellipse 8033.png" alt="">
+                <p class="RF">@Robert FOX</p>
+                <button class="Fol">
+                    Follow
+                </button>
+            </div>
+            <div class="obz6">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA.png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (1).png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (2).png" alt="">
+                <img class="yu1" src="5P-M-ZxceXuDyBSE9svNLu89aLUaUJnsuUhZrrSEEUOn8o5tCaJNGFn0HwHFBt2bsEtsz9HQa9yAsu0ClYZaDf8SeE875p8DZxgKCA (3).png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="tc">
+    <img src="top COLLLECTION.png" alt="">
+</div>
+<div class="gchurka">
+    <div class="churka">
+        <img class="elipsech" src="Ellipse 819.png" alt="">
+        <div>
+            <p class="AAK">
+            APE AS KUSAMA
+            </p>
+           <p class="pr40"> 
+            <span class="PRIEC">Price</span>: $40,457,556
+            </p>
+        </div>
+        <p class="gr67">+67.80%</p>
+    </div>
+    <div class="churka">
+        <img class="elipsech" src="Ellipse 819.png" alt="">
+        <div>
+            <p class="AAK">
+            APE AS KUSAMA
+            </p>
+           <p class="pr40"> 
+            <span class="PRIEC">Price</span>: $40,457,556
+            </p>
+        </div>
+        <p class="gr67">+67.80%</p>
+    </div>
+    <div class="churka">
+        <img class="elipsech" src="Ellipse 819.png" alt="">
+        <div>
+            <p class="AAK">
+            APE AS KUSAMA
+            </p>
+           <p class="pr40"> 
+            <span class="PRIEC">Price</span>: $40,457,556
+            </p>
+        </div>
+        <p class="gr67">+67.80%</p>
+    </div>
+</div>
+<div class="gchurka">
+    <div class="churka">
+        <img class="elipsech" src="Ellipse 819.png" alt="">
+        <div>
+            <p class="AAK">
+            APE AS KUSAMA
+            </p>
+           <p class="pr40"> 
+            <span class="PRIEC">Price</span>: $40,457,556
+            </p>
+        </div>
+        <p class="gr67">+67.80%</p>
+    </div>
+    <div class="churka">
+        <img class="elipsech" src="Ellipse 819.png" alt="">
+        <div>
+            <p class="AAK">
+            APE AS KUSAMA
+            </p>
+           <p class="pr40"> 
+            <span class="PRIEC">Price</span>: $40,457,556
+            </p>
+        </div>
+        <p class="gr67">+67.80%</p>
+    </div>
+    <div class="churka">
+        <img class="elipsech" src="Ellipse 819.png" alt="">
+        <div>
+            <p class="AAK">
+            APE AS KUSAMA
+            </p>
+           <p class="pr40"> 
+            <span class="PRIEC">Price</span>: $40,457,556
+            </p>
+        </div>
+        <p class="gr67">+67.80%</p>
+    </div>
+    </div>
+    <div class="gchurka">
+        <div class="churka">
+            <img class="elipsech" src="Ellipse 819.png" alt="">
+            <div>
+                <p class="AAK">
+                APE AS KUSAMA
+                </p>
+               <p class="pr40"> 
+                <span class="PRIEC">Price</span>: $40,457,556
+                </p>
+            </div>
+            <p class="gr67">+67.80%</p>
+        </div>
+        <div class="churka">
+            <img class="elipsech" src="Ellipse 819.png" alt="">
+            <div>
+                <p class="AAK">
+                APE AS KUSAMA
+                </p>
+               <p class="pr40"> 
+                <span class="PRIEC">Price</span>: $40,457,556
+                </p>
+            </div>
+            <p class="gr67">+67.80%</p>
+        </div>
+        <div class="churka">
+            <img class="elipsech" src="Ellipse 819.png" alt="">
+            <div>
+                <p class="AAK">
+                APE AS KUSAMA
+                </p>
+               <p class="pr40"> 
+                <span class="PRIEC">Price</span>: $40,457,556
+                </p>
+            </div>
+            <p class="gr67">+67.80%</p>
+        </div>
+        </div>
+        <div class="obez1">
+            <div class="OBEZ">
+            <div class="gs">
+                <img src="GET FREE COLLECTION FOR FIRST TRANSACTION.png" alt="">
+                <button class="neu2">Join now</button>
+            </div>
+            <div>
+                <img src="35577 1.png" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="gchurkat">
+            <div class="hell">
+            <div>
+                <p class="chorni">The World’s First and largest Digital <br> Marketplace for Crypto Collectibles<br> and Non - Fungible Tokens</p>
+            </div>
+            <div class="soc">
+                <img class="chta" src="Group 36547.svg" alt="">
+                <img class="chta" src="Group 36546.svg" alt="">
+                <img class="chta" src="Group 36546.svg" alt="">
+            </div>
+        </div>
+        <div class="hhl">
+            <img src="marketpace.png" alt="">
+            <p>All NFTs</p>
+            <p>Art</p>
+            <p>Virtaul World</p>
+            <p>Trading Cards</p>
+        </div>
+        <div class="hhl">
+            <img src="marketpace.png" alt="">
+            <p>Home</p>
+            <p>Marketplace</p>
+            <p>Top creator</p>
+            <p>Trading karts</p>
+        </div>
+        <div class="hhl">
+            <img src="rESOURCES.png" alt="">
+            <p>Help Center</p>
+            <p>Platform status</p>
+            <p>Newsletter</p>
+            <p>System Tokens</p>
+        </div>
+        </div>
+        <hr class="hrka">
+        <div class="df">
+            <div class="yee">
+            <p>@2022NFT. All rights reserved</p>
+            </div>
+            <div class="df2">
+            <p>Terms & Agreements</p>
+            <p>Privacy Policy</p>
+            </div>
+        </div>
+</body>
+</html>
